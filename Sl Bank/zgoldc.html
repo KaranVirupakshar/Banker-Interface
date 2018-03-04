@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>Bank Calculator</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<script src="main.js"></script>
+</head>
+<body>
+<div id="wrap">
+
+<nav id="mainnav">
+
+<h1 id="textlogo">
+Hubli City<span> Bank</span>
+</h1>
+<ul>
+ 	  <li><a >______</a></li>
+		    <li><a >_____</a></li>
+			<li><a >_____</a></li>
+	<li class="active"><a href="index.html">Home</a></li>
+
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+
+
+</ul>
+</nav>
+<section id="content">
+<header id="homeheader">
+<h2>
+
+ </header>
+<br></br>
+<h1 align="center"> Calculate Loan Equity, Total Interest, Monthly Payments</h1>
+<br></br>
+<table align="center" style="margin: 0px auto;">
+  
+  
+	<tr><td><h1>Amount of the loan (Rs.):</h1></td>
+	<td><input type="text" id="amount" onchange="calculateg();" ></td>
+	<td rowspan=8>
+	  <canvas id="graph" width="400" height="280"></canvas></td></tr>
+	<tr><td><h1>Annual interest (%):</h1></td>
+	  <td><input type="text" id="apr" onchange="calculateg();"></td></tr>
+	<tr><td><h1>Repayment period (years):</h1></td>
+	  <td><input type="text" id="years" onchange="calculateg();"></td>
+	<tr><td><h1>Gold Type :</h1></td>
+	  <td><input type="text" id="zipcode" onchange="calculateg();"></td>
+	
+	 <tr><th><td><button id="calculate" class="button" type="button" onclick="calculateg();">Calculate</button></td></tr></th>
+	 	 <tr><th><td><button id="reset" class="button" type="button" onclick="resetall()">Reset</button></td></tr></th>
+	<tr><td><h1>Monthly payment:</h1></td>
+	  <td>Rs.<span class="output" id="payment"></span></td></tr>
+	<tr><td><h1>Total payment:</h1></td>
+	  <td>Rs.<span class="output" id="total"></span></td></tr>
+	<tr><td><h1>Total interest:</h1></td>
+	  <td>Rs.<span class="output" id="totalinterest"></span></td></tr>
+	<tr><td><h1>Reward Points:</h1></td>
+	  <td>Points <span class="output" id="rewardpoints"></span></td></tr>
+	  
+
+	</table>
+		<br></br>
+	<br></br>
+ <footer>
+
+<div id="bottom">
+<a href="#">Home</a> | <a href="#">About Us</a> | <a href="#">Contact Us</a> |<a href="#"> Support</a> | <a href="#">Products</a> | <a href="#">Services</a>
+<div class="clear"></div>
+</div>
+<div id="credits">
+2012 &copy; All Rights Reserved.  <a href="http://www.freshdesignweb.com" title="Download more css templates">Website Template</a></div>
+</footer>
+ </body>
+</html>

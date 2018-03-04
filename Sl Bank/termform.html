@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>Grocery Store Menu</title>
+<link rel="stylesheet" href="bootstrap.min.css">
+<script src="main.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2><center>Grocery Store Product Information</center></h2>
+<form class="form-horizontal">
+
+<div class="form-group">
+<label for="Name">Product Name</label><input type="text" id="name" class="form-control" placeholder="Name">				
+<label for="Price">Price</label><input type="text" id="price" MAXLENGTH=12 class="form-control" placeholder="Rs.XXX">
+</div>
+
+<div class="form-group">
+<label for="Category">Category Name</label><input type="text" id="cname" class="form-control" placeholder="Category">			
+<label for="DPrice">Discounted Price</label> <input type="text" id="dprice" class="form-control" placeholder="Disc. Price">	
+<label for="RackNo">Rack Number</label> <input type="text" id="rno" class="form-control" placeholder="Rack No.">			
+</div>
+<input class="btn btn-success" type="button" value="Add Product" onClick="createObject()">
+<input class="btn btn-success" type="button" value="View Offers" onClick="countcheck()">
+</form>
+
+  <h2><center>Display Product Information</center></h2>
+
+
+<hr>
+<b>Product Name:</b><p id="demo"> </p>
+<b>Category:</b><p id="demo5"> </p>
+<b>Actual Price:</b><p id="demo3"> </p>
+<b>Discounted Price:</b><p id="demo4"> </p>
+<b>Rack No:</b><p id="demo6"> </p>
+</hr>
+<button class="btn btn-success" type="button" name="demo" id="sub" onclick="displaylist()">View Products</button>
+
+
+<h2><center>Find Price of a Product</center></h2>
+
+
+<hr>
+<label for="EmpName">Enter Product's Name:</label>
+<input type="text" name="EmpName" id="ename" placeholder="Product Name">
+<button class="btn btn-success" type="button" name="demo" id="findpan" onclick="displayprice()">Find</button><br>
+<b>Actual Price:</b><p id="demo7"> </p>
+<b>Discounted Price:</b><p id="demo8"> </p>
+</hr>
+
+
+<h2><center>Find Product's Category</center></h2>
+
+
+<hr>
+<label for="EmpName">Enter Product's Name:</label>
+<input type="text" name="EmpName" id="ename2" placeholder="Product Name">
+<button class="btn btn-success" type="button" name="demo" id="findman" onclick="displaycat()">Find</button><br>
+<b>Product Category:</b><p id="demo10"> </p>
+</hr>
+
+<h2><center>Find Product's Location</center></h2>
+
+
+<hr>
+<label for="EmpName">Enter Product's Name:</label>
+<input type="text" name="EmpName" id="mname" placeholder="Product Name">
+<button class="btn btn-success" type="button" name="demo" id="gross" onclick="displayloc()">Find</button><br>
+<b>Rack Number:</b><p id="demo12"> </p>
+</hr>
+
+<h2><center>Total Products Under a Category</center></h2>
+
+
+<hr>
+<label for="EmpName">Enter Category Name:</label>
+<input type="text" name="EmpName" id="mname2" placeholder="Category Name">
+<button class="btn btn-success" type="button" name="demo" id="disemp" onclick="undercat()">Find</button><br>
+<b>Total Count:</b><p id="demo14"> </p>
+</hr>
+
+<h2><center>Discount Percentage of a Product</center></h2>
+
+
+<hr>
+<label for="EmpName">Enter Product Name:</label>
+<input type="text" name="EmpName" id="mname3" placeholder="Product Name">
+<button class="btn btn-success" type="button" name="demo" id="discdisp" onclick="percdisc()">Find</button><br>
+<b>Discount %:</b><p id="demo18"> </p>
+</hr>
+
+<h2><center>Bill Generation</center></h2>
+
+
+<hr>
+<label for="EmpName">Customer Name:</label>
+<input type="text" name="EmpName" id="mname6" placeholder="Customer Name">
+<label for="EmpName">Enter Product Name:</label>
+<input type="text" name="EmpName" id="mname4" placeholder="Product Name">
+<label for="EmpName">Enter Quantity:</label>
+<input type="text" name="EmpName" id="mname5" placeholder="Quantity">
+<button class="btn btn-success" type="button" name="demo" id="discdisp" onclick="billtotal()">Find</button><br>
+<b>Customer Name:</b><p id="demo22"> </p>
+<b>Actual Price:</b><p id="demo19"> </p>
+<b>Discounted Price:</b><p id="demo20"> </p>
+<b>Discount %:</b><p id="demo21"> </p>
+</hr>
+
+</div>
+</body>
+</html>
